@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container{
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        label {
+            margin-bottom: 8px;
+        }
+        input {
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }           
+        button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #retrieveDataBtn {
+            background-color: #2196f3;
+            margin-bottom: 10px;
+        }
+        #displayArea {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        table{
+            border: 2px solid #0c0c0c;
+            width: 40%;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+        table th ,tr,td{
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+
+        <label for="">Name</label>
+        <input type="text" placeholder="enter your name" id="name">
+
+        <label for="">Age</label>
+        <input type="number" placeholder="enter your age" id="age">
+        
+        <button onclick="storeData()">Submit</button>
+    </form>
+    
+    <button id="retrieveDataBtn" onclick="retrieveData()">Retrieve Data</button>
+</div>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    
+</body>
+<script src="index3.js">
+        
+</script>
+</html>
